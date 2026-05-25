@@ -3,7 +3,6 @@ title: "rosa_qda — Freie QDA-Software"
 description: "Die benutzerfreundliche Open-Source-Alternative zu MAXQDA & Co. für die qualitative Sozialforschung."
 layout: "page"
 ---
-
 {{< lead >}}
 Eine **freie, benutzerfreundliche Open-Source-Alternative** zu proprietärer Software wie MAXQDA und Atlas.ti – speziell entwickelt für Studierende und Forschende in den Sozialwissenschaften.
 {{< /lead >}}
@@ -21,9 +20,7 @@ Eine **freie, benutzerfreundliche Open-Source-Alternative** zu proprietärer Sof
 
 ## Warum rosa_qda?
 
-Proprietäre QDA-Programme (Qualitative Data Analysis) sind für Studierende und freie Forschende oft unerschwinglich. Es existieren zwar großartige Open-Source-Projekte wie *Qualcoder* oder *OpenQDA*, doch deren Benutzeroberflächen (GUI) sind oft sehr technisch und einschüchternd.
-
-**rosa_qda** schließt diese Lücke: Es kombiniert ein **macOS-Sonoma-inspiriertes, intuitives GUI** (gebaut mit React 18 & TypeScript) mit einem **robusten, transaktionssicheren Python-Backend** (FastAPI & SQLite). Der Fokus liegt darauf, die qualitative Analyse auch für Computermuffel barrierefrei und einfach zugänglich zu machen.
+Proprietäre QDA-Programme (Qualitative Data Analysis) sind für Studierende und freie Forschende oft unerschwinglich. Es existieren zwar großartige Open-Source-Projekte wie *Qualcoder* oder *OpenQDA*, doch deren Benutzeroberflächen (GUI) sind oft sehr funktional und für technsich weniger versierte Menschen eine Zugangshürde. rosa_qda soll ähnlich wie PSPP für SPSS eine os Alternative sein, mit einer ähnlichen GUI wie die populären Programme.
 
 ---
 
@@ -38,15 +35,15 @@ Proprietäre QDA-Programme (Qualitative Data Analysis) sind für Studierende und
     </p>
   </div>
 
-  <div class="p-6 border rounded-xl dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 shadow-sm hover:shadow-md transition-shadow">
+<div class="p-6 border rounded-xl dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 shadow-sm hover:shadow-md transition-shadow">
     <div class="text-3xl mb-3 text-primary-500">{{< icon "graduation-cap" >}}</div>
     <h3 class="text-xl font-bold mb-2">Fürs Studium optimiert</h3>
     <p class="text-sm text-neutral-600 dark:text-neutral-400">
-      Unterstützung von Mayring-Paraphrasen (Generalisierung & Reduktion), Bohnsacks Dokumentarischer Methode (Sequenzanalyse) und Typologien.
+      Fokus auf Auswertung nach Mayrin, Kuckartz, Bohnsack und Grounded Theory.
     </p>
   </div>
 
-  <div class="p-6 border rounded-xl dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 shadow-sm hover:shadow-md transition-shadow">
+<div class="p-6 border rounded-xl dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 shadow-sm hover:shadow-md transition-shadow">
     <div class="text-3xl mb-3 text-primary-500">{{< icon "code" >}}</div>
     <h3 class="text-xl font-bold mb-2">Robustes Core-Backend</h3>
     <p class="text-sm text-neutral-600 dark:text-neutral-400">
@@ -59,10 +56,7 @@ Proprietäre QDA-Programme (Qualitative Data Analysis) sind für Studierende und
 
 ## Projekt-Entstehung: Vibecoding & Praxisbezug
 
-> {{< icon "circle-info" >}} **Ein Statement zur Entwicklung:**
-> Ich bin **Sozialarbeiter** und kein Informatiker. Dieses Projekt entsteht im Rahmen meiner Masterarbeit in Sozialer Arbeit. Weil ich mich darüber geärgert habe, dass im Studium standardmäßig teure Abos verlangt werden, habe ich beschlossen, rosa_qda selbst zu entwickeln. 
-> 
-> Das gesamte Projekt ist zu großen Teilen **gevibecodet** – getrieben von einer klaren Vision, praktischer Notwendigkeit und der Unterstützung moderner KI-Entwicklungstools, um eine professionelle Software-Architektur für eine nicht-technische Zielgruppe bereitzustellen.
+> Ich bin **Sozialarbeiter** und kein Informatiker, dementsprech beschränkt sind meine coding Fähigkeiten. Darum ist das gesamte Projekt ist zu großen Teilen **gevibecodet.**. Dieses Projekt entsteht beim Schreiben meiner Masterarbeit in Sozialer Arbeit, weil ich mich darüber geärgert habe, dass es für die qualitative Sozialforschung keine open source Alternativen gibt die einen vergleichbaren Umfang und Komfort haben und Bezahlsoftware nur noch als teure Aboversion verfügbar ist.
 
 ---
 
@@ -82,12 +76,12 @@ Proprietäre QDA-Programme (Qualitative Data Analysis) sind für Studierende und
   {{< timelineItem icon="code" header="Backend & Frontend Prototyping" badge="Abgeschlossen" >}}
     Entwicklung des vollen Feature-Sets (F-01 bis F-73) im Python/FastAPI Backend und des React/TypeScript Frontends. Erfolgreiches Bestehen aller 14 Integrationstests.
   {{< /timelineItem >}}
-  
+
   {{< timelineItem icon="globe" header="Integration & Desktop-Wrapper" badge="Aktuell" >}}
     Verknüpfung von Frontend und Backend. Verpackung der Python/FastAPI-Anwendung und des React-Frontends in eine native Desktop-Shell (z. B. PySide6 QWebEngineView).
   {{< /timelineItem >}}
 
   {{< timelineItem icon="box-open" header="Lokale KI-Integration & v1.0 Release" badge="Geplant" >}}
-    Einbindung lokaler KI-Modelle (Ollama) zur Unterstützung bei der Transkription und Kodierung. Erstes stabiles v1.0 Release für Studierende.
+    Einbindung lokaler KI-Modelle (Ollama) zur Unterstützung bei der Transkription und Kodierung. Erstes stabiles v1.0 Release.
   {{< /timelineItem >}}
 {{< /timeline >}}
