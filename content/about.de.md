@@ -6,42 +6,51 @@ layout: "page"
 
 ## Die Vision hinter rosa_qda
 
-Die qualitative Sozialforschung ist ein zentraler Bestandteil sozial- und geisteswissenschaftlicher Studiengänge sowie der Praxisforschung. Doch wer heutzutage Daten qualitativ auswerten möchte (z. B. nach der Qualitativen Inhaltsanalyse nach Mayring oder der Grounded Theory), stößt schnell auf finanzielle Barrieren: Die marktführenden Programme wie **MAXQDA** oder **Atlas.ti** sind proprietär und für Studierende und kleinere Organisationen mit erheblichen Lizenzkosten verbunden.
+Die qualitative Sozialforschung ist ein zentraler Bestandteil sozial- und geisteswissenschaftlicher Studiengänge sowie der Praxisforschung. Doch wer heutzutage Daten qualitativ auswerten möchte (z. B. nach der Qualitativen Inhaltsanalyse nach Mayring, der Grounded Theory oder der Dokumentarischen Methode), stößt schnell auf finanzielle Barrieren: Die marktführenden Programme wie **MAXQDA** oder **Atlas.ti** sind proprietär und für Studierende und kleinere Träger mit erheblichen Lizenzkosten verbunden.
 
-**rosa_qda** soll hier eine Lücke schließen. Ähnlich wie **PSPP** eine freie, leicht zugängliche Alternative zu SPSS im quantitativen Bereich darstellt, soll rosa_qda Studierenden und Forschenden eine kostenfreie Software bieten.
+**rosa_qda** schließt diese Lücke. Ähnlich wie **PSPP** eine freie, leicht zugängliche Alternative zu SPSS im quantitativen Bereich darstellt, bietet rosa_qda Studierenden und Forschenden eine kostenfreie Desktop-Software.
 
-Dabei geht es nicht darum, den vollen Funktionsumfang von kommerziellen Riesen zu kopieren, sondern die **essentiellen Analysefunktionen** bereitzustellen, die für studentische und praxisnahe Forschung benötigt werden, gepaart mit einer hervorragenden Benutzererfahrung.
+Dabei geht es nicht darum, den vollen Funktionsumfang von kommerziellen Riesen zu kopieren, sondern die **essentiellen Analysefunktionen** bereitzustellen, die für studentische und praxisnahe Forschung benötigt werden, gepaart mit einer herausragenden, verständlichen Benutzererfahrung.
 
 ---
 
 ## Warum eine neue Software?
 
-Es gibt bereits einige bemerkenswerte Open-Source-Projekte im QDA-Bereich, z. B.:
-- **Qualcoder**: Bietet exzellente Analyse- und sogar KI-Funktionen, hat jedoch eine sehr klassische, teils technisch einschüchternde GUI.
-- **OpenQDA** und **ReQual**: Bieten teils herausragende Kollaborationsmöglichkeiten, sind in der Einrichtung oder Benutzung jedoch ebenfalls eher technisch orientiert.
+Es gibt bereits einige bemerkenswerte Open-Source-Projekte im QDA-Bereich:
+- **Qualcoder**: Bietet exzellente Analyse- und KI-Funktionen, hat jedoch eine sehr klassische, teils technisch einschüchternde GUI.
+- **OpenQDA** und **ReQual**: Bieten teils gute Ansätze, sind in der Einrichtung oder Benutzung jedoch ebenfalls eher technisch orientiert.
 
-Das Problem: In Fachbereichen wie der **Sozialen Arbeit** oder den Sozialwissenschaften stehen viele Forschende und Studierende Computern eher distanziert gegenüber. Eine komplizierte oder veraltete Benutzeroberfläche führt dazu, dass die Software nicht genutzt wird.
+Das Problem: In Fachbereichen wie der **Sozialen Arbeit** oder den Sozialwissenschaften stehen viele Forschende und Studierende Computern eher distanziert gegenüber. Eine komplizierte oder technisch wirkende Benutzeroberfläche führt dazu, dass die Software nicht genutzt wird.
 
 ### Unser Lösungsansatz
-* **Vertraute Oberfläche:** Ein Design, das sich an bekannten Strukturen orientiert (z. B. Dokumenten-System, Code-System, Text-Editor und Codierbereiche), um den Umstieg und Einstieg so einfach wie möglich zu machen.
-* **Einfache Installation:** Keine komplexen Datenbankkonfigurationen. Die Software soll heruntergeladen und direkt gestartet werden können.
+* **Vertraute Oberfläche:** Ein durchdachtes 5-Zonen-Layout (macOS-Style MenuBar, ModuleTabs, ActionBar, DocArea mit Coding-Lanes, RightPanel mit Memos), das sich an bekannten Strukturen orientiert, um den Umstieg so einfach wie möglich zu machen.
+* **Einfache Installation:** Keine komplexen Datenbankkonfigurationen. Die Software wird als Desktop-App verpackt und nutzt lokale, tragbare Projektdateien (`.rqda` - ein komprimiertes Archiv aus SQLite-Datenbank und Medienordner).
 * **Fokus auf das Wesentliche:** Überschaubare, gut strukturierte Werkzeuge statt überladener Menüs.
 
 ---
 
-## Wer steht hinter dem Projekt?
+## Wer steht hinter dem Projekt? (Vibecoding & Social Work)
 
-Mein Name ist **Jonas Ritscher**. Ich studiere Soziale Arbeit und schreibe derzeit meine Masterarbeit. Da ich mich darüber geärgert habe, dass im Studium standardmäßig auf proprietäre, teure Software gesetzt werden muss, habe ich beschlossen, rosa_qda ins Leben zu rufen.
+Mein Name ist **Jonas Ritscher**. Ich bin **Sozialarbeiter** und studiere derzeit im Master Soziale Arbeit – ich bin also kein ausgebildeter Informatiker. Da es mich geärgert hat, dass im Studium standardmäßig auf proprietäre, teure Software gesetzt werden muss, habe ich beschlossen, rosa_qda selbst zu entwickeln.
 
-Da ich kein ausgebildeter Informatiker bin, wächst dieses Projekt durch viel persönliches Engagement und modernes Software-Prototyping ("Vibecoding"). Das Ziel ist ein offenes, kollaboratives Projekt, bei dem Code, Feedback und Ideen aus der Community geteilt werden.
+Da ich keine formelle IT-Ausbildung besitze, ist dieses Projekt zu großen Teilen **gevibecodet**. Mithilfe moderner KI-Assistenten habe ich eine anspruchsvolle Software-Architektur aufgebaut, die sich vor professionellen Entwicklungen nicht verstecken muss:
+* **Frontend:** React 18, TypeScript und Vite 6 mit einem pixelgenauen macOS-Sonoma-Design.
+* **Backend:** Python 3.13 und FastAPI mit SQLite (WAL-Modus) für schnelle, transaktionssichere Datenoperationen.
+* **Qualitätskontrolle:** Eine umfassende Testsuite mit 14 Integrationstests deckt alle komplexen Datenflüsse und statistischen Berechnungen ab.
+
+Dieses Zusammenspiel zeigt, dass durch "Vibecoding" fachwissenschaftlicher Praxisbezug (was brauchen Sozialarbeitende wirklich?) und moderne Technologie barrierefrei verschmelzen können.
 
 ---
 
-## Wie kann ich mitmachen?
+## Technische Highlights (Bereits implementiert)
 
-Das Projekt steht noch am Anfang, und jede Hilfe ist willkommen! Du kannst dich auf verschiedene Weisen einbringen:
-1. **Feedback & Testen:** Nutze die Prototypen für deine Arbeiten und melde Fehler oder Verbesserungsvorschläge über die GitHub Issues.
-2. **Entwicklung:** Wenn du Programmierkenntnisse in Python (Backend) oder JavaScript (Frontend) hast, freuen wir uns über Pull Requests!
-3. **Dokumentation:** Hilf dabei, verständliche Anleitungen und Tutorials für andere Studierende zu schreiben.
+Das Backend von **rosa_qda** ist bereits vollständig funktionsfähig und deckt wichtige methodologische Werkzeuge ab:
 
-Besuche uns auf [GitHub](https://github.com/JonasRitscher/rosa_qda), um den aktuellen Entwicklungsstand zu sehen oder direkt beizutragen.
+* **Fall- & Variablenmanagement (F-03):** Dynamische Fallzuordnungen und Attribute zur Auswertung nach soziodemografischen Variablen.
+* **Mayring-Paraphrasen-Tabellen (F-14):** Eigene Workflows für qualitative Inhaltsanalysen (Generalisierung, erste und zweite Reduktion).
+* **Dokumentarische Methode (F-40):** Strukturierte Erfassung von formulierender und reflektierender Interpretation für Sequenzanalysen nach Bohnsack.
+* **Visuelle Werkzeuge (F-52):** Ein interaktives Whiteboard zur Konzeptarbeit, dessen Layouts direkt in den hierarchischen Codebaum überführt werden können.
+* **Wortanalysen (F-51):** Wortfrequenztabellen mit Stoppwort-Filtern und Keyword-in-Context-Suchen (KWIC).
+* **Intercoder-Agreement (F-60):** Automatische Berechnung des Cohen's Kappa Koeffizienten bei kollaborativer Codierung.
+* **REFI-QDA Standard (F-61):** Uneingeschränkter Im- und Export von standardisierten XML-Projektdateien (`.qdpx` und `.qdc`) zur Interoperabilität mit MAXQDA und Atlas.ti.
+* **Audit-Trail & Änderungslog (F-62):** Automatisches Logging aller Modifikationen zur Absicherung wissenschaftlicher Gütekriterien.

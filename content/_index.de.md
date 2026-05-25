@@ -21,20 +21,20 @@ Eine **freie, benutzerfreundliche Open-Source-Alternative** zu proprietärer Sof
 
 ## Warum rosa_qda?
 
-Proprietäre QDA-Programme (Qualitative Data Analysis) sind für Studierende und freie Forschende oft unerschwinglich. Es existieren zwar großartige Open-Source-Projekte wie *Qualcoder* oder *OpenQDA*, doch deren Benutzeroberflächen (GUI) sind oft sehr technisch.
+Proprietäre QDA-Programme (Qualitative Data Analysis) sind für Studierende und freie Forschende oft unerschwinglich. Es existieren zwar großartige Open-Source-Projekte wie *Qualcoder* oder *OpenQDA*, doch deren Benutzeroberflächen (GUI) sind oft sehr technisch und einschüchternd.
 
-**rosa_qda** schließt diese Lücke, indem es eine **moderne, intuitive GUI** mit den Kernfunktionen für qualitative Sozialforschung vereint. Es orientiert sich an bekannten Arbeitsweisen, um einen schnellen Einstieg ohne Hürden zu ermöglichen.
+**rosa_qda** schließt diese Lücke: Es kombiniert ein **macOS-Sonoma-inspiriertes, intuitives GUI** (gebaut mit React 18 & TypeScript) mit einem **robusten, transaktionssicheren Python-Backend** (FastAPI & SQLite). Der Fokus liegt darauf, die qualitative Analyse auch für Computermuffel barrierefrei und einfach zugänglich zu machen.
 
 ---
 
-## Kernmerkmale
+## Kernmerkmale & Features
 
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
   <div class="p-6 border rounded-xl dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 shadow-sm hover:shadow-md transition-shadow">
     <div class="text-3xl mb-3 text-primary-500">{{< icon "wand-magic-sparkles" >}}</div>
-    <h3 class="text-xl font-bold mb-2">Moderne GUI</h3>
+    <h3 class="text-xl font-bold mb-2">Moderne GUI (React)</h3>
     <p class="text-sm text-neutral-600 dark:text-neutral-400">
-      Eine optisch ansprechende Benutzeroberfläche, die auch für technisch weniger versierte Personen leicht verständlich und intuitiv bedienbar ist.
+      Ein übersichtliches 5-Zonen-Layout im macOS-Stil mit einfacher Navigation, übersichtlicher Code-Hierarchie und bracket-basierten Codier-Lanes.
     </p>
   </div>
 
@@ -42,40 +42,52 @@ Proprietäre QDA-Programme (Qualitative Data Analysis) sind für Studierende und
     <div class="text-3xl mb-3 text-primary-500">{{< icon "graduation-cap" >}}</div>
     <h3 class="text-xl font-bold mb-2">Fürs Studium optimiert</h3>
     <p class="text-sm text-neutral-600 dark:text-neutral-400">
-      Der Funktionsumfang konzentriert sich auf die Bedürfnisse studentischer Forschung und akademischer Abschlussarbeiten.
+      Unterstützung von Mayring-Paraphrasen (Generalisierung & Reduktion), Bohnsacks Dokumentarischer Methode (Sequenzanalyse) und Typologien.
     </p>
   </div>
 
   <div class="p-6 border rounded-xl dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 shadow-sm hover:shadow-md transition-shadow">
     <div class="text-3xl mb-3 text-primary-500">{{< icon "code" >}}</div>
-    <h3 class="text-xl font-bold mb-2">100% Open Source</h3>
+    <h3 class="text-xl font-bold mb-2">Robustes Core-Backend</h3>
     <p class="text-sm text-neutral-600 dark:text-neutral-400">
-      Keine teuren Lizenzen oder Abonnements. Der Code ist transparent, frei verfügbar und kann von der Community erweitert werden.
+      Datenhaltung als lokaler `.rqda`-Container (SQLite mit WAL, Fremdschlüssel-Sicherheit). REFI-QDA Standard-Im- und Export (.qdpx, .qdc) zur maximalen Interoperabilität.
     </p>
   </div>
 </div>
 
 ---
 
-## Projekt-Entstehung
+## Projekt-Entstehung: Vibecoding & Praxisbezug
 
-> {{< icon "circle-info" >}} **Aus der Praxis für die Praxis:**
-> Die Idee für **rosa_qda** entstand während meiner Masterarbeit in Sozialer Arbeit. Es ärgerte mich, dass es keine barrierefreie, freie Alternative zu den Marktführern gab. Das Programm wächst stetig und wird gemeinschaftlich weiterentwickelt.
+> {{< icon "circle-info" >}} **Ein Statement zur Entwicklung:**
+> Ich bin **Sozialarbeiter** und kein Informatiker. Dieses Projekt entsteht im Rahmen meiner Masterarbeit in Sozialer Arbeit. Weil ich mich darüber geärgert habe, dass im Studium standardmäßig teure Abos verlangt werden, habe ich beschlossen, rosa_qda selbst zu entwickeln. 
+> 
+> Das gesamte Projekt ist zu großen Teilen **gevibecodet** – getrieben von einer klaren Vision, praktischer Notwendigkeit und der Unterstützung moderner KI-Entwicklungstools, um eine professionelle Software-Architektur für eine nicht-technische Zielgruppe bereitzustellen.
+
+---
+
+## Analytische Werkzeuge
+
+* **Code-Retrieval & Segmentmatrix:** Rekursive Suche im Codebaum gefiltert nach Fallvariablen und vollautomatische Kreuztabellen-Generierung.
+* **Wortfrequenzen & KWIC:** Vollständige Häufigkeitslisten mit deutscher und englischer Stoppwortliste sowie Keyword-in-Context-Suchen.
+* **Whiteboard & Concept-Maps:** Visuelle Arbeitsbereiche zur relationalen Zuordnung von Codes und Segmenten (inkl. Code-Kookkurrenzen).
+* **Intercoder-Agreement:** Automatische Berechnung von Cohen's Kappa zur Verifizierung von Übereinstimmungen.
+* **Lückenloser Audit-Trail:** Ein vollständiges, strukturiertes Änderungslog sichert die wissenschaftliche Nachvollziehbarkeit.
 
 ---
 
 ## Roadmap & Status
 
 {{< timeline >}}
-  {{< timelineItem icon="code" header="Prototyping & Backend" badge="Abgeschlossen" >}}
-    Entwicklung des Frontends und Backends in Python/JavaScript. Erste Implementierung von Codierfunktionen.
+  {{< timelineItem icon="code" header="Backend & Frontend Prototyping" badge="Abgeschlossen" >}}
+    Entwicklung des vollen Feature-Sets (F-01 bis F-73) im Python/FastAPI Backend und des React/TypeScript Frontends. Erfolgreiches Bestehen aller 14 Integrationstests.
   {{< /timelineItem >}}
   
-  {{< timelineItem icon="globe" header="Website Launch" badge="Aktuell" >}}
-    Veröffentlichung dieser Website auf Vercel zur Vorstellung des Projekts und Dokumentation.
+  {{< timelineItem icon="globe" header="Integration & Desktop-Wrapper" badge="Aktuell" >}}
+    Verknüpfung von Frontend und Backend. Verpackung der Python/FastAPI-Anwendung und des React-Frontends in eine native Desktop-Shell (z. B. PySide6 QWebEngineView).
   {{< /timelineItem >}}
 
-  {{< timelineItem icon="box-open" header="Erster Release (v0.1.0)" badge="Geplant" >}}
-    Veröffentlichung der ersten stabilen Version für Studierende zur praktischen Anwendung in Master- und Bachelorarbeiten.
+  {{< timelineItem icon="box-open" header="Lokale KI-Integration & v1.0 Release" badge="Geplant" >}}
+    Einbindung lokaler KI-Modelle (Ollama) zur Unterstützung bei der Transkription und Kodierung. Erstes stabiles v1.0 Release für Studierende.
   {{< /timelineItem >}}
 {{< /timeline >}}

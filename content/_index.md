@@ -21,9 +21,9 @@ A **free, user-friendly open-source alternative** to proprietary software like M
 
 ## Why rosa_qda?
 
-Proprietary QDA (Qualitative Data Analysis) tools are often unaffordable for students and independent researchers. While great open-source projects like *Qualcoder* or *OpenQDA* exist, their user interfaces (GUIs) are often highly technical.
+Proprietary QDA (Qualitative Data Analysis) tools are often unaffordable for students and independent researchers. While great open-source projects like *Qualcoder* or *OpenQDA* exist, their user interfaces (GUIs) are often highly technical and intimidating.
 
-**rosa_qda** bridges this gap by combining a **modern, intuitive GUI** with core analysis features for qualitative research, modeled after familiar workflows to enable a quick start.
+**rosa_qda** bridges this gap: It combines a **macOS-Sonoma-inspired, intuitive GUI** (built with React 18 & TypeScript) with a **robust, transaction-safe Python backend** (FastAPI & SQLite). The focus is on making qualitative analysis accessible and straightforward, even for computer-averse users.
 
 ---
 
@@ -32,50 +32,62 @@ Proprietary QDA (Qualitative Data Analysis) tools are often unaffordable for stu
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
   <div class="p-6 border rounded-xl dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 shadow-sm hover:shadow-md transition-shadow">
     <div class="text-3xl mb-3 text-primary-500">{{< icon "wand-magic-sparkles" >}}</div>
-    <h3 class="text-xl font-bold mb-2">Modern GUI</h3>
+    <h3 class="text-xl font-bold mb-2">Modern GUI (React)</h3>
     <p class="text-sm text-neutral-600 dark:text-neutral-400">
-      An appealing user interface designed to be easy, intuitive, and accessible for everyone.
+      A clean macOS-style 5-zone layout with simple navigation, a clear code hierarchy, and bracket-based coding lanes.
     </p>
   </div>
 
   <div class="p-6 border rounded-xl dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 shadow-sm hover:shadow-md transition-shadow">
     <div class="text-3xl mb-3 text-primary-500">{{< icon "graduation-cap" >}}</div>
-    <h3 class="text-xl font-bold mb-2">Tailored for Students</h3>
+    <h3 class="text-xl font-bold mb-2">Academic Toolset</h3>
     <p class="text-sm text-neutral-600 dark:text-neutral-400">
-      Feature set is tailored to the needs of student research and academic theses.
+      Built-in support for Mayring's paraphrasing (generalization & reduction), Bohnsack's Documentary Method, and typology comparisons.
     </p>
   </div>
 
   <div class="p-6 border rounded-xl dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 shadow-sm hover:shadow-md transition-shadow">
     <div class="text-3xl mb-3 text-primary-500">{{< icon "code" >}}</div>
-    <h3 class="text-xl font-bold mb-2">100% Open Source</h3>
+    <h3 class="text-xl font-bold mb-2">Robust Core Backend</h3>
     <p class="text-sm text-neutral-600 dark:text-neutral-400">
-      No expensive licenses or subscription models. Transparent, free, and open to community contributions.
+      Data storage as a local `.rqda` container (SQLite with WAL, foreign key safety). Full REFI-QDA standard import/export (.qdpx, .qdc) for maximum interoperability.
     </p>
   </div>
 </div>
 
 ---
 
-## Project Origins
+## Project Origins: Vibecoding & Practice
 
-> {{< icon "circle-info" >}} **By practice for practice:**
-> The idea for **rosa_qda** arose during my Master's thesis in Social Work. I was frustrated by the lack of barrier-free, free alternatives to market leaders. The program is growing steadily and is developed collaboratively.
+> {{< icon "circle-info" >}} **A statement on development:**
+> I am a **social worker**, not a computer scientist. This project is being developed as part of my Master's thesis in Social Work. Irritated by the standard requirement to buy expensive software subscriptions for study research, I decided to build rosa_qda myself.
+> 
+> The entire project is largely **vibecoded** – driven by a clear vision, practical necessity, and powered by modern AI development tools to deliver professional-grade software architecture tailored for a non-technical audience.
+
+---
+
+## Analytical Tools
+
+* **Code Retrieval & Segment Matrix:** Recursive code tree searches filtered by case variables, and automated cross-tabulation.
+* **Word Frequencies & KWIC:** Word frequency lists with built-in stopword filtering (German/English) and Keyword-in-Context searches.
+* **Whiteboard & Concept Maps:** Visual workspaces to model codes and segments (including code co-occurrence grids).
+* **Intercoder Agreement:** Automated calculation of Cohen's Kappa to verify coding consensus.
+* **Seamless Audit Trail:** A complete, structured changelog table ensures scientific traceability.
 
 ---
 
 ## Roadmap & Status
 
 {{< timeline >}}
-  {{< timelineItem icon="code" header="Prototyping & Backend" badge="Completed" >}}
-    Development of frontend and backend in Python/JavaScript. Initial implementation of coding functions.
+  {{< timelineItem icon="code" header="Backend & Frontend Prototyping" badge="Completed" >}}
+    Development of the full feature set (F-01 to F-73) in the Python/FastAPI backend and the React/TypeScript frontend. 14 integration tests passing successfully.
   {{< /timelineItem >}}
   
-  {{< timelineItem icon="globe" header="Website Launch" badge="Current" >}}
-    Publishing this website on Vercel to introduce the project and documentation.
+  {{< timelineItem icon="globe" header="Integration & Desktop Wrapper" badge="Current" >}}
+    Connecting frontend and backend. Packaging the FastAPI application and React frontend into a native desktop shell (e.g., PySide6 QWebEngineView).
   {{< /timelineItem >}}
 
-  {{< timelineItem icon="box-open" header="First Release (v0.1.0)" badge="Planned" >}}
-    Releasing the first stable version for students to use in their Bachelor's or Master's theses.
+  {{< timelineItem icon="box-open" header="Local AI Integration & v1.0 Release" badge="Planned" >}}
+    Integrating local AI models (Ollama) to assist in transcription and coding tasks. First stable v1.0 release for student research.
   {{< /timelineItem >}}
 {{< /timeline >}}
