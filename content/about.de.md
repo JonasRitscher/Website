@@ -25,7 +25,6 @@ Das Problem: In Fachbereichen wie der **Sozialen Arbeit** oder den Sozialwissens
 ### Unser Lösungsansatz
 
 - **Vertraute Oberfläche:** Ein durchdachtes 5-Zonen-Layout (macOS-Style MenuBar, ModuleTabs, ActionBar, DocArea mit Coding-Lanes, RightPanel mit Memos), das sich an bekannten Strukturen orientiert, um den Umstieg so einfach wie möglich zu machen.
-
 - **Einfache Installation:** Keine komplexen Datenbankkonfigurationen. Die Software wird als Desktop-App verpackt und nutzt lokale, tragbare Projektdateien (`.rqda` - ein komprimiertes Archiv aus SQLite-Datenbank und Medienordner).
 - **Fokus auf das Wesentliche:** Überschaubare, gut strukturierte Werkzeuge statt überladener Menüs.
 

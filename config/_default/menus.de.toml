@@ -7,11 +7,6 @@
   weight = 10
 
 [[main]]
-  name = "Dokumentation"
-  pageRef = "docs"
-  weight = 20
-
-[[main]]
   identifier = "github"
   pre = "github"
   url = "https://github.com/JonasRitscher/rosa_qda"
