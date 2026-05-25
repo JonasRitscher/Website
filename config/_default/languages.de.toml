@@ -1,0 +1,21 @@
+locale = "de"
+label = "Deutsch"
+weight = 1
+title = "rosa_qda"
+
+[params]
+  displayName = "Deutsch"
+  isoCode = "de"
+  rtl = false
+  dateFormat = "2. January 2006"
+  logo = "img/logo.png"
+  description = "rosa_qda - Open-Source-Alternative für qualitative Datenanalyse (QDA) in der Sozialforschung mit moderner, einfacher GUI."
+
+[params.author]
+  name = "rosa_qda"
+  image = "img/logo.png"
+  headline = "Open-Source QDA-Software für die Sozialforschung"
+  bio = "Eine freie und benutzerfreundliche Alternative zu MAXQDA & Co. – entwickelt für Studierende und Forschende in der Sozialen Arbeit und den Sozialwissenschaften."
+  links = [
+    { github = "https://github.com/JonasRitscher/rosa_qda" },
+  ]

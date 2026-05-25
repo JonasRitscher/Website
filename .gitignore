@@ -1,0 +1,22 @@
+# Hugo build directory
+public/
+resources/_gen/
+.hugo_build.lock
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*.tmp
+*~
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
