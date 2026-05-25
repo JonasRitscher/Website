@@ -36,13 +36,14 @@ Eine **freie, benutzerfreundliche Open-Source-Alternative** zu proprietärer Sof
       Fokus auf Auswertung nach Mayrin, Kuckartz, Bohnsack und Grounded Theory.
     </p>
   </div>
-
-`<div class="p-6 border rounded-xl dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 shadow-sm hover:shadow-md transition-shadow">`
-    `<div class="text-3xl mb-3 text-primary-500">`{{< icon "code" >}}`</div>`
-    `<h3 class="text-xl font-bold mb-2">`Robustes Core-Backend `</h3>`
-    `<p class="text-sm text-neutral-600 dark:text-neutral-400">`
+<div class="p-6 border rounded-xl dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 shadow-sm hover:shadow-md transition-shadow">
+    <div class="text-3xl mb-3 text-primary-500">{{< icon "code" >}}</div>
+    <h3 class="text-xl font-bold mb-2">Robustes Core-Backend</h3>
+    <p class="text-sm text-neutral-600 dark:text-neutral-400">
       Datenhaltung als lokaler `.rqda`-Container (SQLite mit WAL, Fremdschlüssel-Sicherheit). REFI-QDA Standard-Im- und Export (.qdpx, .qdc) zur maximalen Interoperabilität.
-    `</p>`
+    </p>
+  </div>
+</div>
 
 ---
 
