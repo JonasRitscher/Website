@@ -1,46 +1,32 @@
 ---
 title: "Über das Projekt"
-description: "Erfahre mehr über die Vision, Entstehung und Ziele von rosa_qda."
+description: "Entstehung und Ziele von rosa_qda."
 layout: "page"
 ---
-## Die Vision hinter rosa_qda
+## Die Idee hinter rosa_qda
 
-Die qualitative Sozialforschung ist ein zentraler Bestandteil sozial- und geisteswissenschaftlicher Studiengänge sowie der Praxisforschung. Doch wer heutzutage Daten qualitativ auswerten möchte (z. B. nach der Qualitativen Inhaltsanalyse nach Mayring, der Grounded Theory oder der Dokumentarischen Methode), stößt schnell auf finanzielle Barrieren: Die marktführenden Programme wie **MAXQDA** oder **Atlas.ti** sind proprietär und für Studierende und kleinere Träger mit erheblichen Lizenzkosten verbunden.
+Proprietäre QDA-Programme (Qualitative Data Analysis) sind für Studierende und freie Forschende oft viel zu teuer. rosa_qda soll ähnlich wie PSPP für SPSS eine os Alternative sein, mit einer ähnlichen GUI wie die populären Programme.
 
-**rosa_qda** schließt diese Lücke. Ähnlich wie **PSPP** eine freie, leicht zugängliche Alternative zu SPSS im quantitativen Bereich darstellt, bietet rosa_qda Studierenden und Forschenden eine kostenfreie Desktop-Software.
-
-Dabei geht es nicht darum, den vollen Funktionsumfang von kommerziellen Riesen zu kopieren, sondern die **essentiellen Analysefunktionen** bereitzustellen, die für studentische und praxisnahe Forschung benötigt werden, gepaart mit einer herausragenden, verständlichen Benutzererfahrung.
-
----
-
-## Warum eine neue Software?
-
-Es gibt bereits einige bemerkenswerte Open-Source-Projekte im QDA-Bereich:
+Es gibt bereits einige tolle Open-Source-Projekte im QDA-Bereich:
 
 - **Qualcoder**: Bietet exzellente Analyse- und KI-Funktionen, hat jedoch eine sehr klassische, teils technisch einschüchternde GUI.
 - **OpenQDA** und **ReQual**: Bieten teils gute Ansätze, sind in der Einrichtung oder Benutzung jedoch ebenfalls eher technisch orientiert.
 
-Das Problem: In Fachbereichen wie der **Sozialen Arbeit** oder den Sozialwissenschaften stehen viele Forschende und Studierende Computern eher distanziert gegenüber. Eine komplizierte oder technisch wirkende Benutzeroberfläche führt dazu, dass die Software nicht genutzt wird.
+Das Problem: In Fachbereichen wie der **Sozialen Arbeit** oder den Sozialwissenschaften stehen viele Studierende Computern vorsichtig ausgedrückt eher distanziert gegenüber. Eine komplizierte oder technisch wirkende Benutzeroberfläche führt dann dazu, dass die Software nicht genutzt wird, weil sie für technisch weniger versierte MEnschen einfach eine zu große Zugangshürde darstellt.
 
-### Unser Lösungsansatz
+### Das rosa_qda anders machen soll
 
-- **Vertraute Oberfläche:** Ein durchdachtes 5-Zonen-Layout (macOS-Style MenuBar, ModuleTabs, ActionBar, DocArea mit Coding-Lanes, RightPanel mit Memos), das sich an bekannten Strukturen orientiert, um den Umstieg so einfach wie möglich zu machen.
+- **Vertraute Oberfläche:** Orientierung am Aufbau von den populären Programmen und einer Tooleiste wie bei ms office, dadurch soll der Einsteig möglchst schnell gelingen
 - **Einfache Installation:** Keine komplexen Datenbankkonfigurationen. Die Software wird als Desktop-App verpackt und nutzt lokale, tragbare Projektdateien (`.rqda` - ein komprimiertes Archiv aus SQLite-Datenbank und Medienordner).
 - **Fokus auf das Wesentliche:** Überschaubare, gut strukturierte Werkzeuge statt überladener Menüs.
 
+Mir geht es nicht darum, den vollen Funktionsumfang von kommerziellen Riesen zu kopieren, sondern die **essentiellen Analysefunktionen** bereitzustellen, die für studentische und praxisnahe Forschung benötigt werden, gepaart mit einer einfachen, verständlichen Benutzeroberfläche.
+
 ---
 
-## Wer steht hinter dem Projekt? (Vibecoding & Social Work)
+### Wer hat sich den Quatsch ausgedacht und wie ist der Code entstanden?
 
-Mein Name ist **Jonas Ritscher**. Ich bin **Sozialarbeiter** und studiere derzeit im Master Soziale Arbeit – ich bin also kein ausgebildeter Informatiker. Da es mich geärgert hat, dass im Studium standardmäßig auf proprietäre, teure Software gesetzt werden muss, habe ich beschlossen, rosa_qda selbst zu entwickeln.
-
-Da ich keine formelle IT-Ausbildung besitze, ist dieses Projekt zu großen Teilen **gevibecodet**. Mithilfe moderner KI-Assistenten habe ich eine anspruchsvolle Software-Architektur aufgebaut, die sich vor professionellen Entwicklungen nicht verstecken muss:
-
-- **Frontend:** React 18, TypeScript und Vite 6 mit einem pixelgenauen macOS-Sonoma-Design.
-- **Backend:** Python 3.13 und FastAPI mit SQLite (WAL-Modus) für schnelle, transaktionssichere Datenoperationen.
-- **Qualitätskontrolle:** Eine umfassende Testsuite mit 14 Integrationstests deckt alle komplexen Datenflüsse und statistischen Berechnungen ab.
-
-Dieses Zusammenspiel zeigt, dass durch "Vibecoding" fachwissenschaftlicher Praxisbezug (was brauchen Sozialarbeitende wirklich?) und moderne Technologie barrierefrei verschmelzen können.
+Mein Name ist **Jonas** und ich bin **Sozialarbeiter** und studiere derzeit im Master Soziale Arbeit – ich bin also kein ausgebildeter Informatiker. rosa_qda ist entstanden, weil es mich ärgert, wie teuer die üblichen Tools inzwischen sind und man sie auch nur noch als Abo kaufen kann. An Hochschulen werden dann gerne alte Versionen genutzt die noch ohne Abo auskommen, aber denen dann neue Funktionen fehlen und für Studierende sind die Preise eh zu hoch. Außerdem find ich es falsch, dass closed source Software dann zu großenteilen aus öffentlichen Geldern finanziert wird. Da ich kein Informatiker bin, ist dieses Projekt zu großen Teilen **gevibecodet**.
 
 ---
 

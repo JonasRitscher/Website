@@ -18,12 +18,6 @@ Eine **freie, benutzerfreundliche Open-Source-Alternative** zu proprietärer Sof
 
 ---
 
-## Warum rosa_qda?
-
-Proprietäre QDA-Programme (Qualitative Data Analysis) sind für Studierende und freie Forschende oft unerschwinglich. Es existieren zwar großartige Open-Source-Projekte wie *Qualcoder* oder *OpenQDA*, doch deren Benutzeroberflächen (GUI) sind oft sehr funktional und für technsich weniger versierte Menschen eine Zugangshürde. rosa_qda soll ähnlich wie PSPP für SPSS eine os Alternative sein, mit einer ähnlichen GUI wie die populären Programme.
-
----
-
 ## Kernmerkmale & Features
 
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
@@ -43,20 +37,12 @@ Proprietäre QDA-Programme (Qualitative Data Analysis) sind für Studierende und
     </p>
   </div>
 
-<div class="p-6 border rounded-xl dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 shadow-sm hover:shadow-md transition-shadow">
-    <div class="text-3xl mb-3 text-primary-500">{{< icon "code" >}}</div>
-    <h3 class="text-xl font-bold mb-2">Robustes Core-Backend</h3>
-    <p class="text-sm text-neutral-600 dark:text-neutral-400">
+`<div class="p-6 border rounded-xl dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 shadow-sm hover:shadow-md transition-shadow">`
+    `<div class="text-3xl mb-3 text-primary-500">`{{< icon "code" >}}`</div>`
+    `<h3 class="text-xl font-bold mb-2">`Robustes Core-Backend `</h3>`
+    `<p class="text-sm text-neutral-600 dark:text-neutral-400">`
       Datenhaltung als lokaler `.rqda`-Container (SQLite mit WAL, Fremdschlüssel-Sicherheit). REFI-QDA Standard-Im- und Export (.qdpx, .qdc) zur maximalen Interoperabilität.
-    </p>
-  </div>
-</div>
-
----
-
-## Projekt-Entstehung: Vibecoding & Praxisbezug
-
-> Ich bin **Sozialarbeiter** und kein Informatiker, dementsprech beschränkt sind meine coding Fähigkeiten. Darum ist das gesamte Projekt ist zu großen Teilen **gevibecodet.**. Dieses Projekt entsteht beim Schreiben meiner Masterarbeit in Sozialer Arbeit, weil ich mich darüber geärgert habe, dass es für die qualitative Sozialforschung keine open source Alternativen gibt die einen vergleichbaren Umfang und Komfort haben und Bezahlsoftware nur noch als teure Aboversion verfügbar ist.
+    `</p>`
 
 ---
 
